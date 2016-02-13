@@ -152,4 +152,6 @@ function pd_methods.learn(self, name)
 end
 
 
-dofile(minetest.get_modpath(minetest.get_current_modname()) .. "/test.lua")
+if minetest.get_modpath("default") then
+	dofile(minetest.get_modpath(minetest.get_current_modname()) .. "/test.lua")
+end
