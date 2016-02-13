@@ -94,6 +94,9 @@ function progress_tree.new_player_data(tree, learned)
 	
 	return data
 end
+
+
+tree_methods.new_player_data = progress_tree.new_player_data
 		
 
 -- Serialization to a string
@@ -110,6 +113,9 @@ function progress_tree.deserialize_player_data(tree, learned_string)
 
 	return progress_tree.new_player_data(tree, learned)
 end
+
+
+tree_methods.deserialize_player_data = progress_tree.deserialize_player_data
 
 
 -- Tells whether the tech is already learned
