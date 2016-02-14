@@ -3,6 +3,8 @@
 This is a library to help implement advancement trees, such as talent trees
 or research trees.
 
+Licensed under version 2.1 of the LGPL, or any later version.
+
 API
 ===
 Functions
