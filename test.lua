@@ -24,7 +24,6 @@ local infos = {
 
 local function build_formspec()
 	local formspec = "size[8,8]"
-	print(dump(data.available))
 	local nodes = {}
 
 	for k in pairs(data.learned) do

@@ -144,7 +144,7 @@ function pd_methods.learn(self, name)
 	-- Decrement the remaining deps for each child
 	for i, child in ipairs(children) do
 		local new_rem = self.remaining_deps[child] - 1
-		print(child, new_rem)
+
 		-- If the player learned it out of order, don't put it as
 		-- available.
 		if new_rem == 0 and not self:knows(child) then
